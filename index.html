@@ -3,19 +3,45 @@
 <head>
   <title>Komathy's Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-    h1 { color: #4CAF50; }
-    a { display: block; margin: 10px; font-size: 18px; color: #333; text-decoration: none; }
+    body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background: #f0f0f5; }
+    header { background: #4CAF50; color: white; text-align: center; padding: 50px 20px; }
+    h1 { margin: 0; font-size: 50px; }
+    p { font-size: 18px; }
+    .projects { display: flex; flex-wrap: wrap; justify-content: center; margin: 30px; }
+    .card { background: white; padding: 20px; margin: 20px; border-radius: 10px; width: 300px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .card h2 { font-size: 22px; }
+    .card p { font-size: 16px; }
+    .card a { text-decoration: none; color: #4CAF50; font-weight: bold; display: inline-block; margin-top: 10px; }
+    footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px; }
   </style>
 </head>
 <body>
-  <h1>Welcome to Komathy's Portfolio</h1>
-  <p>This is my personal portfolio showcasing my projects and skills.</p>
-  
-  <h2>Projects</h2>
-  <a href="https://github.com/Komathy0822/Power-BI-e-commerce-dashboard" target="_blank">📊 Power BI E-Commerce Dashboard</a>
-  <a href="https://github.com/Komathy0822/Hotel-and-Uber-Data-Analysis" target="_blank">Hotel Stays and Uber Rides Data Analysis (R)</a>
-  <h2>Contact</h2>
-  <p>Email: komathy4002@gmail.com</p>
+
+<header>
+  <h1>Komathy's Portfolio</h1>
+  <p> My Data Analytics and Business-IT projects</p>
+</header>
+
+<section class="projects">
+  <div class="card">
+    <h2>Power BI E-Commerce Dashboard</h2>
+    <p>Interactive dashboard visualizing e-commerce sales KPIs.</p>
+    <a href="https://github.com/Komathy0822/Power-BI-e-commerce-dashboard" target="_blank">View Project →</a>
+  </div>
+
+  <div class="card">
+    <h2>Hotel & Uber Data Analysis</h2>
+    <p>R programming project uncovering insights on hotel stays & rides.</p>
+    <a href="https://github.com/Komathy0822/hotel-uber-data-analysis" target="_blank">View Project →</a>
+  </div>
+
+
+
+</section>
+
+<footer>
+  <p>Contact:komathy4002@gmail.com</p>
+</footer>
+
 </body>
 </html>
