@@ -24,8 +24,15 @@
       background-image: url('https://img.freepik.com/premium-photo/illustration-empowered-female-data-scientist-analyzing-visualizing-complex-data-screen_969090-37.jpg');
       background-size: cover;
       background-position: center;
-      border: 8px solid #4CAF50; /* Green border for image */
-      box-sizing: border-box;
+      border: 8px solid #4CAF50;
+      position: relative;
+    }
+
+    .hero-img::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.35);
     }
 
     .hero-text {
@@ -34,13 +41,14 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background-color: #121212;
+      background: linear-gradient(135deg, #121212, #1c1c1c);
     }
 
     .hero-text h1 {
-      font-size: 50px;
+      font-size: 55px;
       color: #4CAF50;
       margin-bottom: 15px;
+      text-shadow: 0 0 8px #4CAF50;
     }
 
     .hero-text h3 {
@@ -63,10 +71,22 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 17px;
+      position: relative;
     }
 
-    .hero-text a:hover {
-      text-decoration: underline;
+    .hero-text a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background: #4CAF50;
+      bottom: -4px;
+      left: 0;
+      transition: 0.3s ease;
+    }
+
+    .hero-text a:hover::after {
+      width: 100%;
     }
 
     /* Projects section */
