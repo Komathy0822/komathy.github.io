@@ -1,28 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Komathy | Data Analytics Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Komathy | Data Analyst Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
       background-color: #121212;
-      color: #f5f5f5;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
     }
-    header {
-      background: #1f1f1f;
-      text-align: center;
-      padding: 100px 20px;
+    /* Hero section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 50px;
+      flex-wrap: wrap;
     }
-    header h1 {
+    .intro-left {
+      flex: 1;
+      text-align: left;
+      min-width: 280px;
+    }
+    .intro-left h1 {
       font-size: 50px;
-      margin-bottom: 10px;
+      color: #4CAF50;
     }
-    header p {
+    .intro-left p {
       font-size: 20px;
-      color: #b5b5b5;
+      color: #ccc;
     }
+    .center-img {
+      flex: 1;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .center-img img {
+      width: 280px;
+      border-radius: 50%;
+      border: 5px solid #4CAF50;
+    }
+    .intro-right {
+      flex: 1;
+      text-align: right;
+      min-width: 280px;
+    }
+    .intro-right p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+    .intro-right a {
+      display: inline-block;
+      margin-top: 20px;
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Projects section */
     .projects {
       display: flex;
       flex-wrap: wrap;
@@ -60,6 +98,8 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    /* Footer */
     footer {
       background: #1f1f1f;
       padding: 30px;
@@ -70,18 +110,34 @@
       color: #4CAF50;
       margin: 0 10px;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 22px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Komathy</h1>
-  <p>Data Analytics | Business-Tech Enthusiast</p>
-</header>
+<!-- Hero Section -->
+<div class="hero">
+  <div class="intro-left">
+    <h1>Hi, I'm Komathy</h1>
+    <p>Aspiring Data Analyst</p>
+  </div>
 
-<section class="projects">
+  <div class="center-img">
+    <img src="https://img.freepik.com/premium-photo/illustration-empowered-female-data-scientist-analyzing-visualizing-complex-data-screen_969090-37.jpg" alt="Data Science Icon">
+  </div>
+
+  <div class="intro-right">
+    <p>
+      Passionate about transforming data into insights through analytics, dashboards, and smart business solutions.
+      Proficient in R, Power BI, and business analytics, aiming to simplify decision-making for companies.
+    </p>
+    <a href="#projects">View My Projects →</a>
+  </div>
+</div>
+
+<!-- Projects Section -->
+<section class="projects" id="projects">
 
   <div class="card">
     <img src="https://github.com/Komathy0822/Power-BI-e-commerce-dashboard/blob/main/PowerBI.jpg?raw=true" alt="Power BI Dashboard">
@@ -99,6 +155,7 @@
 
 </section>
 
+<!-- Footer -->
 <footer>
   <p>Connect with me:</p>
   <a href="komathy4002@gmail.com"><i class="fas fa-envelope"></i></a>
