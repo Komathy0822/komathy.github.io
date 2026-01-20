@@ -333,35 +333,28 @@
 
 </footer>
   <script>
-const texts = [
-  "Aspiring Data Analyst",
-   "Power BI | SQL | Python
-];
-
+    const texts = ["Aspiring Data Analyst", "Business Analytics Enthusiast"];
 let count = 0;
 let index = 0;
-let currentText = "";
-let letter = "";
 
-(function type(){
-  if(count === texts.length){
-    count = 0;
-  }
+(function type() {
+  const typingElement = document.querySelector(".typing");
+  const currentText = texts[count];
 
-  currentText = texts[count];
-  letter = currentText.slice(0, ++index);
+  typingElement.textContent = currentText.slice(0, index + 1);
+  index++;
 
-  document.querySelector(".typing").textContent = letter;
-
-  if(letter.length === currentText.length){
+  if (index === currentText.length) {
     setTimeout(() => {
       index = 0;
-      count++;
-    }, 1500);
+      count = (count + 1) % texts.length; // loop through array
+      type();
+    }, 2000);
+  } else {
+    setTimeout(type, 120);
   }
-
-  setTimeout(type, 120);
 })();
+
 </script>
 
 
